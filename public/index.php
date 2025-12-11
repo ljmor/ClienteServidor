@@ -43,7 +43,9 @@ $controllers = [
     'member' => 'MemberController',
     'class' => 'ClassController',
     'payment' => 'PaymentController',
-    'instructor' => 'InstructorController'
+    'instructor' => 'InstructorController',
+    'routine' => 'RoutineController',
+    'exercise' => 'ExerciseController'
 ];
 
 // SERVIDOR: Valida que el controlador existe

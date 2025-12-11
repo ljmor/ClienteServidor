@@ -157,6 +157,15 @@ body {
     font-size: 0.75rem;
 }
 
+.btn-info {
+    background-color: #0ea5e9;
+    color: white;
+}
+
+.btn-info:hover {
+    background-color: #0284c7;
+}
+
 /* Acciones */
 .actions {
     margin-bottom: 1.5rem;
@@ -225,6 +234,16 @@ body {
 .badge-warning {
     background-color: #fef3c7;
     color: #92400e;
+}
+
+.badge-danger {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.badge-info {
+    background-color: #dbeafe;
+    color: #1e40af;
 }
 
 /* Formularios - CLIENTE captura datos y los envía al SERVIDOR */
@@ -331,5 +350,28 @@ body {
         flex-direction: column;
         gap: 0.5rem;
     }
+}
+
+/* Tags para equipamiento */
+.tag {
+    display: inline-block;
+    background-color: #e5e7eb;
+    color: #374151;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    margin: 0.1rem;
+}
+
+/* Texto auxiliar */
+.text-muted {
+    color: var(--text-light);
+}
+
+.form-help {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--text-light);
+    margin-top: 0.25rem;
 }
 

@@ -16,6 +16,8 @@
                 <a href="/index.php?controller=class&action=index" class="nav-link">Clases</a>
                 <a href="/index.php?controller=payment&action=index" class="nav-link">Pagos</a>
                 <a href="/index.php?controller=instructor&action=index" class="nav-link">Instructores</a>
+                <a href="/index.php?controller=routine&action=index" class="nav-link">Rutinas</a>
+                <a href="/index.php?controller=exercise&action=index" class="nav-link">Ejercicios</a>
             </nav>
         </div>
     </header>
@@ -28,9 +30,13 @@
                 $messages = [
                     'created' => 'Registro creado exitosamente',
                     'updated' => 'Registro actualizado exitosamente',
-                    'deleted' => 'Registro eliminado exitosamente'
+                    'deleted' => 'Registro eliminado exitosamente',
+                    'block_added' => 'Bloque agregado exitosamente',
+                    'block_deleted' => 'Bloque eliminado exitosamente',
+                    'exercise_added' => 'Ejercicio agregado al bloque',
+                    'exercise_removed' => 'Ejercicio removido del bloque'
                 ];
-                echo $messages[$_GET['success']] ?? 'Operación exitosa';
+                echo $messages[$_GET['success']] ?? 'Operacion exitosa';
                 ?>
             </div>
         <?php endif; ?>
@@ -40,7 +46,9 @@
                 <?php
                 $messages = [
                     'not_found' => 'Registro no encontrado',
-                    'delete_failed' => 'Error al eliminar el registro'
+                    'delete_failed' => 'Error al eliminar el registro',
+                    'invalid_data' => 'Datos invalidos',
+                    'remove_failed' => 'Error al remover el ejercicio'
                 ];
                 echo $messages[$_GET['error']] ?? 'Ha ocurrido un error';
                 ?>
