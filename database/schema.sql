@@ -69,3 +69,21 @@ INSERT INTO classes (name, instructor, schedule_time, schedule_days, capacity, d
     ('Pilates', 'Laura Sánchez', '10:00:00', 'Lunes, Miércoles, Viernes', 18, 'Clase de pilates para fortalecimiento')
 ON CONFLICT DO NOTHING;
 
+-- Tabla de Instructores
+CREATE TABLE IF NOT EXISTS instructors (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    phone VARCHAR(20),
+    specialization VARCHAR(100),
+    hire_date DATE NOT NULL DEFAULT CURRENT_DATE,
+    status VARCHAR(20) DEFAULT 'active' CHECK (status IN ('active', 'inactive')),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Insertar datos de ejemplo
+INSERT INTO instructors (name, email, phone, specialization, hire_date) VALUES
+    ('Ana Martínez', 'ana.martinez@gimnasio.com', '0987654321', 'Yoga', '2023-01-15'),
+    ('Pedro Rodríguez', 'pedro.rodriguez@gimnasio.com', '0987654322', 'CrossFit', '2023-02-20'),
+    ('Laura Sánchez', 'laura.sanchez@gimnasio.com', '0987654323', 'Pilates', '2023-03-10')
+ON CONFLICT (email) DO NOTHING;

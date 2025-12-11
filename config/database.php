@@ -15,8 +15,8 @@ class Database {
     // Nota: En macOS con Homebrew, PostgreSQL usa el usuario actual como superusuario
     private const DB_HOST = 'localhost';
     private const DB_NAME = 'gimnasio_db';
-    private const DB_USER = 'xavicrip';  // Usuario actual (cambiar si es necesario)
-    private const DB_PASS = '';           // Sin contraseña para usuario local
+    private const DB_USER = 'postgres';  // Usuario actual (cambiar si es necesario)
+    private const DB_PASS = '1234';           // Sin contraseña para usuario local
     private const DB_PORT = '5432';
     
     /**

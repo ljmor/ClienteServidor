@@ -141,7 +141,7 @@ php -S localhost:8000
 
 Accede a: `http://localhost:8000/index.php`
 
-#### Opción B: Apache/Nginx (producción)
+#### Opción C: Apache/Nginx (producción)
 
 Configura el DocumentRoot de tu servidor web apuntando a la carpeta `public/`.
 

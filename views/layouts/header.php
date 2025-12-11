@@ -15,6 +15,7 @@
                 <a href="/index.php?controller=member&action=index" class="nav-link">Miembros</a>
                 <a href="/index.php?controller=class&action=index" class="nav-link">Clases</a>
                 <a href="/index.php?controller=payment&action=index" class="nav-link">Pagos</a>
+                <a href="/index.php?controller=instructor&action=index" class="nav-link">Instructores</a>
             </nav>
         </div>
     </header>
